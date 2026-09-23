@@ -185,6 +185,7 @@ body.has-content-offset .wrap{margin-left:0}
 .flip-front{background:var(--bg-1)}
 .flip-back{background:var(--bg-2);transform:rotateY(180deg);border-color:var(--border-strong);padding:22px;justify-content:center}
 .flip-photo{flex:1;background:repeating-linear-gradient(135deg,var(--bg-2),var(--bg-2) 10px,#0f1420 10px,#0f1420 20px);display:flex;align-items:center;justify-content:center;color:var(--text-muted)}
+.flip-photo img{width:100%;height:100%;object-fit:cover;display:block}
 .flip-photo svg{width:26px;height:26px;opacity:.5}
 .flip-caption{padding:14px 16px}
 .flip-caption h3{font-size:14px;line-height:1.35}
