@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samya Dutta — AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top-progress"></div>
+<nav id="sidebar">
+  <div class="side-inner">
+    <div class="idx-item" data-target="hero"><span class="n">00</span><span class="bar"></span> hero</div>
+    <div class="idx-item" data-target="about"><span class="n">01</span><span class="bar"></span> about</div>
+    <div class="idx-item" data-target="projects"><span class="n">02</span><span class="bar"></span> projects</div>
+    <div class="idx-item" data-target="skills"><span class="n">03</span><span class="bar"></span> stack</div>
+    <div class="idx-item" data-target="experience"><span class="n">04</span><span class="bar"></span> experience</div>
+    <div class="idx-item" data-target="education"><span class="n">05</span><span class="bar"></span> education</div>
+    <div class="idx-item" data-target="achievements"><span class="n">06</span><span class="bar"></span> achievements</div>
+    <div class="idx-item" data-target="contact"><span class="n">07</span><span class="bar"></span> contact</div>
+    <div class="scroll-info">scroll <span class="pct" id="scroll-pct">0%</span></div>
+  </div>
+</nav>
+
+
+<section class="hero" id="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <h1 class="name">Samya&nbsp;Dutta</h1>
+      <p class="role-line">I build <span id="typed"></span><span class="caret"></span></p>
+      <span class="identity-badge">AI Engineer</span>
+      <p class="desc">B.Tech CSE AI Graduate from IEM Kolkata.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn primary">View projects</a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/SamyaDutta" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/></svg></a>
+        <a href="https://www.linkedin.com/in/samya-dutta-74aa59249/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V21H9z"/></svg></a>
+        <a href="https://www.instagram.com/samyadutta29" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="mailto:samyadutta29@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        <a id="hero-resume" download="Samya_Dutta_Resume.pdf" href="assets/resume.pdf" aria-label="Download resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-ring"><img src="assets/photo.jpg" alt="Samya Dutta"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">About</span>
+      <h2>Building AI that ships, not just AI that demos</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I build AI systems that go past the demo stage — retrieval that actually retrieves the right thing, agents that coordinate instead of collide, and MCP tooling that lets those agents reach real systems instead of staying boxed in. Evaluation matters too: I care whether it's actually working, not just whether the output looks right.</p>
+        <p>Three internships in, plus two years of leadership with IEEE Computer Society, IEM SBC — one as Secretary, one as Chairperson.</p>
+        <div class="constants">
+          <div class="const-label">// favourites</div>
+          <div class="const-row"><span class="k">club</span><span class="v"><span class="badge-pill">FCB</span> <span class="badge-pill">MCI</span> </span></div>
+          <div class="const-row"><span class="k">cricketer</span><span class="v"><span class="badge-pill">VK18</span> Virat Kohli</span></div>
+          <div class="const-row"><span class="k">ipl</span><span class="v"><span class="badge-pill">RCB</span> <span class="badge-pill">KKR</span></span></div>
+          <div class="const-row"><span class="k">singer</span><span class="v"><span class="badge-pill">AR</span> Arijit Singh</span></div>
+        </div>
+      </div>
+      <div class="stat-grid reveal">
+        <div class="stat-card"><div class="num" data-count="9.58">0</div><div class="label">CGPA · B.Tech CSE (AI)</div></div>
+        <div class="stat-card"><div class="num" data-count="3">0</div><div class="label">Internships completed</div></div>
+        <div class="stat-card"><div class="num">2×</div><div class="label">GATE qualified · 2025 &amp; 2026</div></div>
+        <div class="stat-card"><div class="num">4th / 6th</div><div class="label">Rank · pre-final &amp; final year</div></div>
+        <div class="stat-card"><div class="num" style="font-size:19px">2025–26</div><div class="label">Chairperson · IEEE CS IEM SBC</div></div>
+        <div class="stat-card"><div class="num" style="font-size:19px">2024–25</div><div class="label">Secretary · IEEE CS IEM SBC</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Projects</span>
+      <h2>A few things I've shipped</h2>
+      <p>Check out my work on GitHub.</p>
+    </div>
+    <div class="project-grid reveal">
+
+      <div class="project-card" data-tilt>
+        <div class="proj-top">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#5fd4f0" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 6h7v7"/></svg></div>
+          <div class="proj-actions">
+            <a href="https://logistics-ai-powered-supply-chain-decision-intelligence-system.streamlit.app/" target="_blank" rel="noopener" aria-label="Live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></a>
+            <a href="https://github.com/SamyaDutta/Logistics-AI-Powered-Supply-Chain-Decision-Intelligence-System" target="_blank" rel="noopener" aria-label="GitHub repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/></svg></a>
+            <button type="button" class="expand-toggle" aria-label="Toggle details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+        <h3>Logistics AI</h3>
+        <p>A decision-intelligence agent for cold-chain logistics — built on LangGraph, it reasons across live fleet telemetry (SQL Server), real-time corridor weather, and Pinecone-indexed compliance SOPs to flag high-risk shipments before they become incidents.</p>
+        <div class="proj-extra"><p>Read-only SQL access via a dedicated semantic view, audit logging of every tool call, and a separate admin review console for compliance oversight.</p></div>
+        <div class="project-tags"><span>LangGraph</span><span>Pinecone RAG</span><span>SQL Server</span><span>Streamlit</span></div>
+      </div>
+
+      <div class="project-card" data-tilt>
+        <div class="proj-top">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2f6fed" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg></div>
+          <div class="proj-actions">
+            <a href="https://trippilot-ai-multi-agent-travel-planning.onrender.com/" target="_blank" rel="noopener" aria-label="Live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></a>
+            <a href="https://github.com/SamyaDutta/TripPilot-AI-Multi-Agent-Travel-Planning-System" target="_blank" rel="noopener" aria-label="GitHub repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/></svg></a>
+            <button type="button" class="expand-toggle" aria-label="Toggle details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+        <h3>TripPilot AI</h3>
+        <p>A travel-planning agent built on LangGraph and MCP, with a supervisor node that routes tasks to 5 agents, input guardrails that validate requests before they reach the model, and human-in-the-loop approval before a plan is finalized.</p>
+        <div class="proj-extra"><p>FastAPI backend with a dedicated MCP server for live weather lookups, and thread-based sessions so a plan can be revised and re-approved across multiple turns.</p></div>
+        <div class="project-tags"><span>LangGraph</span><span>FastAPI</span><span>PostgreSQL</span><span>MCP</span></div>
+      </div>
+
+      <div class="project-card" data-tilt>
+        <div class="proj-icon" style="margin-bottom:0"></div>
+        <div class="proj-top" style="margin-top:-46px">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+          <div class="proj-actions">
+            <a href="https://recruvia20-ly8xstqgb8uex4gb9hyhnm.streamlit.app/" target="_blank" rel="noopener" aria-label="Live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></a>
+            <a href="https://github.com/SamyaDutta/Recruvia---Recruitment-Automation-System" target="_blank" rel="noopener" aria-label="GitHub repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/></svg></a>
+            <button type="button" class="expand-toggle" aria-label="Toggle details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+        <h3>Recruvia</h3>
+        <p>A CrewAI-based recruitment pipeline that takes a natural-language job requirement, searches a ChromaDB candidate store, screens and ranks CVs against the role, and sends interview invites automatically over Gmail.</p>
+        <div class="proj-extra"><p>100-point candidate scoring, ChromaDB similarity search over 8 profile attributes, automated interview invites via Gmail SMTP, an HR chat assistant for follow-up questions, and PDF report generation for the full recruitment run.</p></div>
+        <div class="project-tags"><span>CrewAI</span><span>ChromaDB</span><span>Groq</span><span>Streamlit</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Tech stack</span>
+      <h2>Tools I reach for</h2>
+    </div>
+    <div class="stack-sub reveal">32 technologies · bar = rough experience depth</div>
+    <div class="stack-grid reveal" id="stack-grid"></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Experience</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div><h3>Research Analyst</h3><span class="tl-org">GreyB</span></div>
+            <div class="tl-date">Jan '26 — Jun '26</div>
+          </div>
+          <div class="tl-tags"><span>Patent research</span><span>IP strategy</span></div>
+          <ul class="tl-bullets">
+            <li>Ran prior-art searches and technical analyses to evaluate patentability and infringement risk</li>
+            <li>Supported IP strategy decisions across multiple technology domains</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div><h3>Research Intern</h3><span class="tl-org">IEEE EMBS Pune Section</span></div>
+            <div class="tl-date">Jun '25 — Jul '25</div>
+          </div>
+          <div class="tl-tags"><span>Biomedical ML</span><span>Classification</span></div>
+          <ul class="tl-bullets">
+            <li>Trained 13 ML models for epilepsy classification on EHR data for resource-scarce settings</li>
+            <li>Reached 91% precision and a 0.92 F1 score</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div><h3>Generative AI Intern</h3><span class="tl-org">IEM Research Foundation</span></div>
+            <div class="tl-date">May '25 — Jul '25</div>
+          </div>
+          <div class="tl-tags"><span>LangGraph</span><span>RAG</span><span>FastAPI</span></div>
+          <ul class="tl-bullets">
+            <li>Built a multi-agent HR automation system covering resume screening and interview scheduling</li>
+            <li>Extended it to churn analysis, grade fitment, and ROI/learning analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Education</span>
+      <h2>The journey so far</h2>
+    </div>
+    <div class="pipeline reveal">
+      <div class="pipeline-track">
+        <div class="pipeline-line"><div class="glow-dot"></div></div>
+        <div class="pnode">
+          <div class="dot"></div>
+          <div class="stage">ICSE</div>
+          <div class="info">Holy Home</div>
+          <div class="grade">94.2%</div>
+        </div>
+        <div class="pnode">
+          <div class="dot"></div>
+          <div class="stage">ISC</div>
+          <div class="info">Holy Home</div>
+          <div class="grade">95.75%</div>
+        </div>
+        <div class="pnode">
+          <div class="dot"></div>
+          <div class="stage">B.Tech CSE (AI)</div>
+          <div class="info">IEM Kolkata</div>
+          <div class="grade">9.58 CGPA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Achievements</span>
+      <h2>Recognition along the way</h2>
+      <p>Tap a card to flip it.</p>
+    </div>
+    <div class="flip-grid reveal">
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><div class="flip-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg></div><div class="flip-caption"><h3>GATE 2025 &amp; 2026 qualified</h3><div class="tap-hint">tap to flip</div></div></div>
+        <div class="flip-back"><p>Qualified the Graduate Aptitude Test in Engineering in consecutive years.</p></div>
+      </div></div>
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><div class="flip-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg></div><div class="flip-caption"><h3>Director's Award — Best Scientific Mind</h3><div class="tap-hint">tap to flip</div></div></div>
+        <div class="flip-back"><p>Awarded by IEM Kolkata in 2026 for standout scientific and technical contribution.</p></div>
+      </div></div>
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><div class="flip-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg></div><div class="flip-caption"><h3>Best IEEE SBC in India</h3><div class="tap-hint">tap to flip</div></div></div>
+        <div class="flip-back"><p>IEM's IEEE Computer Society chapter named best Student Branch Chapter nationally at AICSSYC 2025, under my chairpersonship.</p></div>
+      </div></div>
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><div class="flip-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg></div><div class="flip-caption"><h3>Best IEEE SBC — Kolkata Section</h3><div class="tap-hint">tap to flip</div></div></div>
+        <div class="flip-back"><p>IEM's IEEE Computer Society chapter named best Student Branch Chapter in Kolkata Section Student's Congress 2025, under my chairpersonship.</p></div>
+      </div></div>
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><div class="flip-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg></div><div class="flip-caption"><h3>4th rank — pre-final year</h3><div class="tap-hint">tap to flip</div></div></div>
+        <div class="flip-back"><p>Ranked 4th in the pre-final year of B.Tech CSE (AI) at IEM Kolkata.</p></div>
+      </div></div>
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><div class="flip-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg></div><div class="flip-caption"><h3>6th rank — final year</h3><div class="tap-hint">tap to flip</div></div></div>
+        <div class="flip-back"><p>Ranked 6th in the final year of B.Tech CSE (AI) at IEM Kolkata.</p></div>
+      </div></div>
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><div class="flip-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg></div><div class="flip-caption"><h3>IEEE India Council Hackathon Finalist</h3><div class="tap-hint">tap to flip</div></div></div>
+        <div class="flip-back"><p>Reached the finals of the IEEE India Council Hackathon, 2023.</p></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <h2>Let's build something worth shipping.</h2>
+      <p style="max-width:480px">Open to GenAI engineering roles and interesting collaborations — reach out directly or find me on GitHub and LinkedIn.</p>
+      <div class="contact-links">
+        <a class="icon-link" href="mailto:samyadutta29@gmail.com"><span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="lbl">Email</span></a>
+        <a class="icon-link" href="https://github.com/SamyaDutta" target="_blank" rel="noopener"><span class="circle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/></svg></span><span class="lbl">GitHub</span></a>
+        <a class="icon-link" href="https://www.linkedin.com/in/samya-dutta-74aa59249/" target="_blank" rel="noopener"><span class="circle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V21H9z"/></svg></span><span class="lbl">LinkedIn</span></a>
+        <a class="icon-link" id="resume-link" download="Samya_Dutta_Resume.pdf" href="assets/resume.pdf"><span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg></span><span class="lbl">Resume</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Samya Dutta — built with care.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
