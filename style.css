@@ -122,9 +122,13 @@ body.has-content-offset .wrap{margin-left:0}
 .pnode .grade{font-size:13px;color:var(--accent-2);margin-top:2px;font-weight:500}
 @media (max-width:700px){
   .pipeline-track{flex-direction:column;align-items:flex-start;gap:34px}
-  .pipeline-line{display:none}
-  .pnode{align-items:flex-start;text-align:left}
+  .pipeline-line{display:block;left:6px;right:auto;top:7px;bottom:7px;width:1px;height:auto}
+  .pipeline-line .glow-dot{top:0;left:-2px;animation:travelVertical 4.5s linear infinite}
+  .pnode{align-items:flex-start;text-align:left;width:100%;padding-left:30px}
+  .pnode .dot{position:absolute;left:0;top:0}
+  .pnode .stage{margin-top:0}
 }
+@keyframes travelVertical{0%{top:0}100%{top:100%}}
 
 /* ---------- TECH STACK ---------- */
 .stack-sub{font-size:13px;color:var(--text-muted);margin-bottom:22px;font-family:var(--font-mono)}
@@ -215,6 +219,12 @@ footer{text-align:center;padding:34px 0 48px;font-size:12px;color:var(--text-mut
   .hero-photo{order:-1;margin-bottom:8px}
   .photo-ring{width:170px}
   .about-grid{grid-template-columns:1fr}
+  .flip-card{height:270px}
+  .flip-photo{flex:0 0 170px;min-height:0}
+  .flip-photo img{object-fit:contain}
+  .flip-caption{padding:9px 14px 10px}
+  .flip-caption h3{line-height:1.25}
+  .flip-caption .tap-hint{margin-top:4px}
   section{padding:4rem 0}
   .contact-box{padding:30px}
 }

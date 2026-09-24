@@ -44,6 +44,10 @@ updateSidebar();
 // cross-fade sections as they leave focus
 function updateSectionFade(){
   var allSections = document.querySelectorAll('section');
+  if (window.innerWidth <= 760){
+    allSections.forEach(function(sec){ sec.style.opacity = '1'; });
+    return;
+  }
   var mid = window.innerHeight/2;
   allSections.forEach(function(sec){
     var rect = sec.getBoundingClientRect();
